@@ -1,5 +1,6 @@
 -- I don't recommend using any of this code since its not near optimal.
 
+local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua"))()
 local userInputService = game:GetService("UserInputService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local runService = game:GetService("RunService")
@@ -8,7 +9,6 @@ local lighting = game:GetService("Lighting")
 local localPlayer = players.LocalPlayer
 local camera = workspace.CurrentCamera
 local mouse = localPlayer:GetMouse()
-local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua"))()
 
 local menu = game:GetObjects("rbxassetid://7142010382")[1]
 local tabholder = menu.outline.outline.main.group

@@ -14,7 +14,7 @@ cuteware discord: https://discord.gg/nyZaeASbsk
 repeat wait() until game:IsLoaded()
 if game:GetService("CoreGui"):FindFirstChild("sjorlib") then return end
 getgenv().error = function() end
-local ver = "user Pix3lsMore"
+local ver = "crack 0.1.1"
 --files
 if not isfolder("alora") then
     makefolder("alora")
@@ -23,7 +23,8 @@ if not isfolder("alora/"..tostring(game.GameId)) then
     makefolder("alora/"..tostring(game.GameId))
 end
 --vars
-local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/sj0rs1/alora/main/library.lua"))()
+local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/library.lua?token=GHSAT0AAAAAAB6EZEIHYSA4R3NWDLT5Z7WKY6Y5VPA"))()
+local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua?token=GHSAT0AAAAAAB6EZEIHENY52HQPEN344HWCY6Y6TRA"))()
 local userInputService = game:GetService("UserInputService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local runService = game:GetService("RunService")

@@ -23,8 +23,6 @@ local camera = workspace.CurrentCamera
 local mouse = localPlayer:GetMouse()
 local debris = game:GetService("Debris")
 local client = getsenv(localPlayer.PlayerGui.Client)
-local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua"))()
-
 local aloraWatermark = Drawing.new("Text");aloraWatermark.Font = 2;aloraWatermark.Position = Vector2.new(50,24);aloraWatermark.Visible = false;aloraWatermark.Size = 13;aloraWatermark.Color = Color3.new(1,1,1);aloraWatermark.Outline = true
 local speclistText = Drawing.new("Text");speclistText.Font = 2;speclistText.Position = Vector2.new(8,305);speclistText.Visible = false;speclistText.Size = 13;speclistText.Color = Color3.new(1,1,1);speclistText.Outline = true
 

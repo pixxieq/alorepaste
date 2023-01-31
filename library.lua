@@ -8,6 +8,7 @@ local lighting = game:GetService("Lighting")
 local localPlayer = players.LocalPlayer
 local camera = workspace.CurrentCamera
 local mouse = localPlayer:GetMouse()
+local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua"))()
 
 local menu = game:GetObjects("rbxassetid://7142010382")[1]
 local tabholder = menu.outline.outline.main.group

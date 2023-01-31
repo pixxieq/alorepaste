@@ -13,7 +13,6 @@ local avatar = Instance.new("ImageLabel")
 profileSystem.Name = "profileSystem"
 profileSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 profileSystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-profileSystem.Enabled = false
 
 user.Name = "user"
 user.Parent = profileSystem

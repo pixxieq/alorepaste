@@ -49,7 +49,7 @@ coroutine.wrap(HMPGJ_fake_script)()
 local function IOOCDZS_fake_script() -- profileSystem.LocalScript 
 	local script = Instance.new('LocalScript', profileSystem)
 
-	local ifGuiOpened = false
+	local ifGuiOpened = true
 	local profileGui = script.Parent
 	
 	if ifGuiOpened == false then

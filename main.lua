@@ -23,8 +23,8 @@ if not isfolder("alora/"..tostring(game.GameId)) then
     makefolder("alora/"..tostring(game.GameId))
 end
 --vars
-local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/library.lua?token=GHSAT0AAAAAAB6EZEIHYSA4R3NWDLT5Z7WKY6Y5VPA"))()
-local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua?token=GHSAT0AAAAAAB6EZEIHENY52HQPEN344HWCY6Y6TRA"))()
+local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/library.lua?token=GHSAT0AAAAAAB6EZEIGDJVVQBYHG76DMWPCY6ZCDOQ"))()
+local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua?token=GHSAT0AAAAAAB6EZEIGMUKXO54RUBEYK73CY6ZCEDQ"))()
 local userInputService = game:GetService("UserInputService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local runService = game:GetService("RunService")

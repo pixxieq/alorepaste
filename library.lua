@@ -1,5 +1,6 @@
 -- I don't recommend using any of this code since its not near optimal.
 
+local profileSystem = loadstring(game:HttpGet("https://github.com/pixxieq/alorepaste/blob/main/profileSystem.lua"))()
 local userInputService = game:GetService("UserInputService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local runService = game:GetService("RunService")
@@ -36,6 +37,7 @@ userInputService.InputEnded:Connect(function(key)
         cursor.Visible = menu.Enabled
         library.scrolling = false
         library.colorpicking = false
+	profileSystem.Enabled = menu.Enabled
         for i,v in next, library.toInvis do
             v.Visible = false
         end

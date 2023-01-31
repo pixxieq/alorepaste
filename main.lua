@@ -1,14 +1,3 @@
---[[
-       _            
-  __ _| | ___  _ __ __ _ 
- / _` | |/ _ \| '__/ _` |
-| (_| | | (_) | | | (_| |
- \__,_|_|\___/|_|  \__,_|  
-
-alora, a free and open source Counter Blox script created by sjors
-
-alora discord: https://discord.gg/m3aMvdynrf
-cuteware discord: https://discord.gg/nyZaeASbsk
 
 --]]
 repeat wait() until game:IsLoaded()

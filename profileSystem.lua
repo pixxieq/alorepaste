@@ -1,64 +1,63 @@
--- profile system idk
+
+-- profile system v2:
 
 local profileSystem = Instance.new("ScreenGui")
-local TextLabel = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
+local user = Instance.new("TextLabel")
+local avatar = Instance.new("ImageLabel")
 
--- da gui :cool:
+--gui:
 
 profileSystem.Name = "profileSystem"
-profileSystem.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+profileSystem.Parent = game.Workspace
 profileSystem.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-TextLabel.Parent = profileSystem
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.BackgroundTransparency = 1.000
-TextLabel.Position = UDim2.new(-0.000700160861, 0, 0.942738414, 0)
-TextLabel.Size = UDim2.new(0, 142, 0, 50)
-TextLabel.Font = Enum.Font.Unknown
-TextLabel.Text = "user : \"player:"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+user.Name = "user"
+user.Parent = profileSystem
+user.Active = true
+user.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+user.BackgroundTransparency = 1.000
+user.Position = UDim2.new(0.0104438644, 0, 0.950980365, 0)
+user.Size = UDim2.new(0, 127, 0, 50)
+user.Font = Enum.Font.RobotoMono
+user.Text = "user : \"ERROR\""
+user.TextColor3 = Color3.fromRGB(255, 255, 255)
+user.TextSize = 18.000
+user.TextXAlignment = Enum.TextXAlignment.Left
 
-ImageLabel.Parent = profileSystem
-ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageLabel.Position = UDim2.new(0.179665685, 0, 0.950980484, 0)
-ImageLabel.Size = UDim2.new(0, 32, 0, 32)
-ImageLabel.Image = "http://www.roblox.com/asset/?id=11437654695"
+avatar.Name = "avatar"
+avatar.Parent = profileSystem
+avatar.Active = true
+avatar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+avatar.BorderSizePixel = 0
+avatar.Position = UDim2.new(0.176240206, 0, 0.950000048, 0)
+avatar.Size = UDim2.new(0, 48, 0, 48)
+avatar.Image = "http://www.roblox.com/asset/?id=12002240273"
 
--- scripts heh
+-- scripts:
 
-local function HMPGJ_fake_script() -- TextLabel.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel)
+local function JVGJ_fake_script() -- user.LocalScript 
+	local script = Instance.new('LocalScript', user)
 
 	local player = game.Players.LocalPlayer
-	local privateProfile = false
+	local ifGuiOpened = false
+	local ifProfilePrivate = false
 	
 	script.Parent.Text = "user: "..player.Name
 	
-	if privateProfile == false then
-		script.Parent.Text = "user: "..player.Name
-	end
-	
-	if privateProfile == true then
-		script.Parent.Text = "user: omg goofy dog!31986!1"
-	end
-end
-coroutine.wrap(HMPGJ_fake_script)()
-local function IOOCDZS_fake_script() -- profileSystem.LocalScript 
-	local script = Instance.new('LocalScript', profileSystem)
-
-	local ifGuiOpened = true
-	local profileGui = script.Parent
-	
-	if ifGuiOpened == false then
-		profileGui.Enabled = false
-	end
-	
 	if ifGuiOpened == true then
-		profileGui.Enabled = true
+		script.Parent.Parent.Parent.profileSystem.Enabled = true
+		
+	else
+		script.Parent.Parent.Parent.profileSystem.Enabled = false
+		
 	end
 	
+	if ifProfilePrivate == true then
+		script.Parent.Text = "user: alora cracked"
+		
+	else
+		script.Parent.Text = "user: "..player.Name
+		
+	end
 end
-coroutine.wrap(IOOCDZS_fake_script)()
+coroutine.wrap(JVGJ_fake_script)()

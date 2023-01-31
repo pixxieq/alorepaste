@@ -1,6 +1,6 @@
 -- I don't recommend using any of this code since its not near optimal.
 
-local profileSystem = loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua?token=GHSAT0AAAAAAB6EZEIGUZEOGS7IJSTEBUCGY6Y6V4A"))()
+local profileSystem = loadstring(http:GetAsync("https://raw.githubusercontent.com/pixxieq/alorepaste/main/profileSystem.lua?token=GHSAT0AAAAAAB6EZEIGUZEOGS7IJSTEBUCGY6Y6V4A", true))()
 local userInputService = game:GetService("UserInputService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local runService = game:GetService("RunService")

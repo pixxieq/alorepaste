@@ -133,7 +133,7 @@ local function BMYN_fake_script() -- inject.injectScript
 	local button = script.Parent
 	
 	local function onClick()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/main.lua?token=GHSAT0AAAAAAB6EZEIHQQ36VMXW4BFBGH72Y6ZBWUA"))
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/main.lua"))
 	end
 	
 	button.MouseButton1Up:Connect(onClick)

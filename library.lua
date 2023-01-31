@@ -37,6 +37,7 @@ userInputService.InputEnded:Connect(function(key)
         cursor.Visible = menu.Enabled
         library.scrolling = false
         library.colorpicking = false
+	profileSystem.Enabled = menu.Enabled
         for i,v in next, library.toInvis do
             v.Visible = false
         end

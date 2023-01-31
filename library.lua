@@ -35,7 +35,7 @@ userInputService.InputEnded:Connect(function(key)
     if key.KeyCode == Enum.KeyCode.Delete then
         menu.Enabled = not menu.Enabled
         cursor.Visible = menu.Enabled
-        profileSystem.Enabled = menu.Enabled
+        profileSystem.Enabled = true
         library.scrolling = false
         library.colorpicking = false
         for i,v in next, library.toInvis do

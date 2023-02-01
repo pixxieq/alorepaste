@@ -557,6 +557,7 @@ end)
 local aimbotTab = library:addTab("Aimbot")
 local visualsTab = library:addTab("Visuals")
 local miscTab = library:addTab("Misc")
+local movementTab = library:addTab("Movement")
 local configTab = library:addTab("Settings")
 
 local configGroup = configTab:createGroup(0)
@@ -799,11 +800,11 @@ drawingGroup:addToggle({text = "Velocity Indicator",flag = "velo_indicator"})
 drawingGroup:addToggle({text = "WASD Indicator",flag = "wasd_indicator"})
 drawingGroup:addSlider({text = "Graph Width",flag = "graph_width",min = 1,max = 5,value = 1})
 
-local movementGroup = miscTab:createGroup(0)
+local movementGroup = movementTab:createGroup(0)
 local otherGroup = miscTab:createGroup(0)
 local otherGroup2 = miscTab:createGroup(1)
 
-movementGroup:addToggle({text = "Bunny Hop",flag = "bunny_hop",callback = function()
+movementGroup:addToggle({text = "bhop",flag = "bunny_hop",callback = function()
     while library.flags["bunny_hop"] do runService.RenderStepped:Wait()--wait()
         if isAlive() and userInputService:IsKeyDown(Enum.KeyCode.Space) then
             localPlayer.Character.Humanoid.Jump = true

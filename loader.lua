@@ -199,7 +199,7 @@ local function UEAXEQC_fake_script() -- inject.injectScript
 	local function onClick()
 		script.Parent.Parent.Parent:Destroy()
 	
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/main.lua?token=GHSAT0AAAAAAB6EZEIHBQ6XFDLGPEMPPPXWY62BTVQ"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/pixxieq/alorepaste/main/main.lua"))()
 	end
 	
 	button.MouseButton1Up:Connect(onClick)
